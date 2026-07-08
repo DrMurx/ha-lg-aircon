@@ -1,0 +1,37 @@
+[project]
+name = "ha-lg-aircon"
+version = "0.1.0"
+description = "Home Assistant custom integration: LG Artcool air conditioners over the infrared platform"
+readme = "README.md"
+requires-python = ">=3.14.2"
+license = { text = "MIT" }
+
+[dependency-groups]
+dev = [
+  "homeassistant>=2026.4.0",
+  "infrared-protocols",
+  "pytest-homeassistant-custom-component",
+  "ruff",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+asyncio_mode = "auto"
+
+[tool.ruff]
+target-version = "py314"
+
+[tool.ruff.lint]
+select = [
+  "E",   # pycodestyle errors
+  "W",   # pycodestyle warnings
+  "F",   # pyflakes
+  "I",   # isort
+  "UP",  # pyupgrade
+  "B",   # bugbear
+  "SIM", # simplify
+]
+
+[tool.ruff.lint.isort]
+force-sort-within-sections = true
+combine-as-imports = true

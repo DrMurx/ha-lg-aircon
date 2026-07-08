@@ -1,0 +1,13 @@
+{
+  "domain": "lg_aircon",
+  "name": "LG Aircon (IR)",
+  "codeowners": ["@jan-kunzmann"],
+  "config_flow": true,
+  "dependencies": ["infrared"],
+  "documentation": "https://github.com/jan-kunzmann/ha-lg-aircon",
+  "integration_type": "device",
+  "iot_class": "assumed_state",
+  "issue_tracker": "https://github.com/jan-kunzmann/ha-lg-aircon/issues",
+  "requirements": [],
+  "version": "0.1.0"
+}

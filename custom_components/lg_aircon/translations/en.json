@@ -1,0 +1,62 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Add LG air conditioner",
+        "data": {
+          "name": "Name",
+          "infrared_entity_id": "Infrared emitter"
+        },
+        "data_description": {
+          "name": "Name for this air conditioner in Home Assistant.",
+          "infrared_entity_id": "The infrared emitter entity that can reach this unit."
+        }
+      },
+      "reconfigure": {
+        "title": "Reconfigure LG air conditioner",
+        "data": {
+          "infrared_entity_id": "Infrared emitter"
+        },
+        "data_description": {
+          "infrared_entity_id": "The infrared emitter entity that can reach this unit."
+        }
+      }
+    },
+    "abort": {
+      "already_configured": "An air conditioner with this name and infrared emitter is already configured.",
+      "no_emitters": "No infrared emitter entities found. Set up an infrared-capable integration (for example Broadlink or ESPHome) first.",
+      "reconfigure_successful": "Reconfiguration was successful."
+    }
+  },
+  "entity": {
+    "climate": {
+      "aircon": {
+        "state_attributes": {
+          "fan_mode": {
+            "state": {
+              "quiet": "Quiet"
+            }
+          },
+          "preset_mode": {
+            "state": {
+              "boost": "Jet cool"
+            }
+          }
+        }
+      }
+    },
+    "switch": {
+      "plasma": {
+        "name": "Plasma purifier"
+      },
+      "auto_clean": {
+        "name": "Auto clean"
+      }
+    },
+    "button": {
+      "light_toggle": {
+        "name": "Toggle light"
+      }
+    }
+  }
+}

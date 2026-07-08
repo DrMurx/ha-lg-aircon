@@ -1,0 +1,17 @@
+{
+  "entity": {
+    "switch": {
+      "plasma": {
+        "default": "mdi:air-purifier"
+      },
+      "auto_clean": {
+        "default": "mdi:broom"
+      }
+    },
+    "button": {
+      "light_toggle": {
+        "default": "mdi:lightbulb-on-outline"
+      }
+    }
+  }
+}
