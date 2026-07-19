@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 460 200" role="img" aria-label="LG Aircon (IR) logo">
+  <title>LG Aircon (IR)</title>
+
+  <!-- Mark: IR remote sending waves toward a snowflake -->
+  <g transform="translate(0,20)" fill="none" stroke-linecap="round">
+
+    <!-- IR waves -->
+    <g stroke="#22BFE0" stroke-width="4" stroke-dasharray="5 7">
+      <path d="M51.84,43.21 A20,20 0 0,1 64.32,56.82"/>
+      <path d="M56.63,30.05 A34,34 0 0,1 77.84,53.20"/>
+      <path d="M61.42,16.89 A48,48 0 0,1 91.36,49.58"/>
+    </g>
+
+    <!-- Snowflake -->
+    <g stroke="#1E88B8" stroke-width="5">
+      <path d="M122,48 H178"/>
+      <path d="M136,23.75 L164,72.25"/>
+      <path d="M164,23.75 L136,72.25"/>
+      <path d="M169.04,48 L176.41,53.16"/>
+      <path d="M169.04,48 L176.41,42.84"/>
+      <path d="M130.96,48 L123.59,42.84"/>
+      <path d="M130.96,48 L123.59,53.16"/>
+      <path d="M159.52,64.49 L158.74,73.46"/>
+      <path d="M159.52,64.49 L167.68,68.29"/>
+      <path d="M140.48,31.51 L141.26,22.54"/>
+      <path d="M140.48,31.51 L132.32,27.71"/>
+      <path d="M140.48,64.49 L132.32,68.29"/>
+      <path d="M140.48,64.49 L141.26,73.46"/>
+      <path d="M159.52,31.51 L167.68,27.71"/>
+      <path d="M159.52,31.51 L158.74,22.54"/>
+    </g>
+
+    <!-- Remote control -->
+    <rect x="24" y="54" width="42" height="94" rx="12" fill="#123A52" stroke="none"/>
+    <circle cx="45" cy="62" r="4" fill="#22BFE0" stroke="none"/>
+    <g fill="#CFEFFA" stroke="none">
+      <circle cx="45" cy="80" r="5"/>
+      <circle cx="45" cy="97" r="5"/>
+      <circle cx="45" cy="114" r="5"/>
+      <circle cx="45" cy="131" r="5"/>
+    </g>
+  </g>
+
+  <!-- Wordmark: "LG" in a plain geometric shape, distinct from LG's own logotype -->
+  <g transform="translate(230,40) scale(1.2)" fill="#123A52">
+    <path d="M0,0 H22 V78 H62 V100 H0 Z"/>
+    <g transform="translate(78,0)">
+      <path d="M81.95,72.37 A39,39 0 1,1 81.95,27.63" fill="none" stroke="#123A52" stroke-width="22" stroke-linecap="round"/>
+      <rect x="55" y="39" width="35" height="22"/>
+    </g>
+  </g>
+</svg>
