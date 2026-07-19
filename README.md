@@ -2,6 +2,8 @@
 
 <img src="https://raw.githubusercontent.com/DrMurx/ha-lg-aircon/main/assets/logo.svg" alt="LG Aircon (IR) logo" width="160" align="right"/>
 
+[![hacs_badge](https://img.shields.io/badge/HACS-Custom-orange.svg)](https://github.com/hacs/integration)
+
 Control LG Artcool air conditioners over infrared, through Home Assistant's
 native **`infrared` platform** (new in HA 2026.4). Each configured unit is a
 virtual `climate` device that synthesizes the LG 28-bit AC protocol frame for
