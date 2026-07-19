@@ -1,0 +1,62 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "LG-airco toevoegen",
+        "data": {
+          "name": "Naam",
+          "infrared_entity_id": "Infraroodzender"
+        },
+        "data_description": {
+          "name": "Naam voor deze airco in Home Assistant.",
+          "infrared_entity_id": "De infraroodzender-entiteit die dit apparaat kan bereiken."
+        }
+      },
+      "reconfigure": {
+        "title": "LG-airco opnieuw configureren",
+        "data": {
+          "infrared_entity_id": "Infraroodzender"
+        },
+        "data_description": {
+          "infrared_entity_id": "De infraroodzender-entiteit die dit apparaat kan bereiken."
+        }
+      }
+    },
+    "abort": {
+      "already_configured": "Er is al een airco met deze naam en infraroodzender geconfigureerd.",
+      "no_emitters": "Geen infraroodzender-entiteiten gevonden. Stel eerst een infrarood-integratie in (bijvoorbeeld Broadlink of ESPHome).",
+      "reconfigure_successful": "Opnieuw configureren is gelukt."
+    }
+  },
+  "entity": {
+    "climate": {
+      "aircon": {
+        "state_attributes": {
+          "fan_mode": {
+            "state": {
+              "quiet": "Stil"
+            }
+          },
+          "preset_mode": {
+            "state": {
+              "boost": "Jet Cool"
+            }
+          }
+        }
+      }
+    },
+    "switch": {
+      "plasma": {
+        "name": "Plasma-luchtreiniger"
+      },
+      "auto_clean": {
+        "name": "Automatische reiniging"
+      }
+    },
+    "button": {
+      "light_toggle": {
+        "name": "Licht schakelen"
+      }
+    }
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Ajouter un climatiseur LG",
+        "data": {
+          "name": "Nom",
+          "infrared_entity_id": "Émetteur infrarouge"
+        },
+        "data_description": {
+          "name": "Nom de ce climatiseur dans Home Assistant.",
+          "infrared_entity_id": "L'entité émetteur infrarouge capable d'atteindre cet appareil."
+        }
+      },
+      "reconfigure": {
+        "title": "Reconfigurer le climatiseur LG",
+        "data": {
+          "infrared_entity_id": "Émetteur infrarouge"
+        },
+        "data_description": {
+          "infrared_entity_id": "L'entité émetteur infrarouge capable d'atteindre cet appareil."
+        }
+      }
+    },
+    "abort": {
+      "already_configured": "Un climatiseur avec ce nom et cet émetteur infrarouge est déjà configuré.",
+      "no_emitters": "Aucune entité émetteur infrarouge trouvée. Configurez d'abord une intégration compatible infrarouge (par exemple Broadlink ou ESPHome).",
+      "reconfigure_successful": "La reconfiguration a réussi."
+    }
+  },
+  "entity": {
+    "climate": {
+      "aircon": {
+        "state_attributes": {
+          "fan_mode": {
+            "state": {
+              "quiet": "Silencieux"
+            }
+          },
+          "preset_mode": {
+            "state": {
+              "boost": "Jet Cool"
+            }
+          }
+        }
+      }
+    },
+    "switch": {
+      "plasma": {
+        "name": "Purificateur plasma"
+      },
+      "auto_clean": {
+        "name": "Nettoyage automatique"
+      }
+    },
+    "button": {
+      "light_toggle": {
+        "name": "Basculer la lumière"
+      }
+    }
+  }
+}

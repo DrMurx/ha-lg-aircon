@@ -1,0 +1,62 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "LG-Klimagerät hinzufügen",
+        "data": {
+          "name": "Name",
+          "infrared_entity_id": "Infrarot-Sender"
+        },
+        "data_description": {
+          "name": "Name für dieses Klimagerät in Home Assistant.",
+          "infrared_entity_id": "Die Infrarot-Sender-Entität, die dieses Gerät erreichen kann."
+        }
+      },
+      "reconfigure": {
+        "title": "LG-Klimagerät neu konfigurieren",
+        "data": {
+          "infrared_entity_id": "Infrarot-Sender"
+        },
+        "data_description": {
+          "infrared_entity_id": "Die Infrarot-Sender-Entität, die dieses Gerät erreichen kann."
+        }
+      }
+    },
+    "abort": {
+      "already_configured": "Ein Klimagerät mit diesem Namen und Infrarot-Sender ist bereits konfiguriert.",
+      "no_emitters": "Keine Infrarot-Sender-Entitäten gefunden. Richten Sie zuerst eine infrarotfähige Integration ein (z. B. Broadlink oder ESPHome).",
+      "reconfigure_successful": "Die Neukonfiguration war erfolgreich."
+    }
+  },
+  "entity": {
+    "climate": {
+      "aircon": {
+        "state_attributes": {
+          "fan_mode": {
+            "state": {
+              "quiet": "Leise"
+            }
+          },
+          "preset_mode": {
+            "state": {
+              "boost": "Jet Cool"
+            }
+          }
+        }
+      }
+    },
+    "switch": {
+      "plasma": {
+        "name": "Plasma-Luftreiniger"
+      },
+      "auto_clean": {
+        "name": "Selbstreinigung"
+      }
+    },
+    "button": {
+      "light_toggle": {
+        "name": "Licht umschalten"
+      }
+    }
+  }
+}

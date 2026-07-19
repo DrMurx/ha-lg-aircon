@@ -1,0 +1,62 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Añadir aire acondicionado LG",
+        "data": {
+          "name": "Nombre",
+          "infrared_entity_id": "Emisor de infrarrojos"
+        },
+        "data_description": {
+          "name": "Nombre para este aire acondicionado en Home Assistant.",
+          "infrared_entity_id": "La entidad emisora de infrarrojos que puede alcanzar esta unidad."
+        }
+      },
+      "reconfigure": {
+        "title": "Reconfigurar aire acondicionado LG",
+        "data": {
+          "infrared_entity_id": "Emisor de infrarrojos"
+        },
+        "data_description": {
+          "infrared_entity_id": "La entidad emisora de infrarrojos que puede alcanzar esta unidad."
+        }
+      }
+    },
+    "abort": {
+      "already_configured": "Ya hay un aire acondicionado configurado con este nombre y emisor de infrarrojos.",
+      "no_emitters": "No se encontraron entidades emisoras de infrarrojos. Configure primero una integración compatible con infrarrojos (por ejemplo, Broadlink o ESPHome).",
+      "reconfigure_successful": "La reconfiguración se realizó correctamente."
+    }
+  },
+  "entity": {
+    "climate": {
+      "aircon": {
+        "state_attributes": {
+          "fan_mode": {
+            "state": {
+              "quiet": "Silencioso"
+            }
+          },
+          "preset_mode": {
+            "state": {
+              "boost": "Jet Cool"
+            }
+          }
+        }
+      }
+    },
+    "switch": {
+      "plasma": {
+        "name": "Purificador de plasma"
+      },
+      "auto_clean": {
+        "name": "Autolimpieza"
+      }
+    },
+    "button": {
+      "light_toggle": {
+        "name": "Alternar luz"
+      }
+    }
+  }
+}
